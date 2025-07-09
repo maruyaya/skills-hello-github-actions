@@ -1,6 +1,10 @@
 name: Post welcome comment
 on:
   pull_request:
-    types: [opened]
+    types: [opened] #only for when a pull request is opened (created)
 permissions:
   pull-requests: write
+jobs:
+  welcome:
+    name: Post welcome comment
+    runs-on: ubuntu-latest
